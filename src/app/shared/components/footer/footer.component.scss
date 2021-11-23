@@ -1,0 +1,12 @@
+@import "../../../../styles.scss";
+
+:host(app-header) {
+  padding-top: 4.5rem;
+  display: grid;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $secondary-color;
+}

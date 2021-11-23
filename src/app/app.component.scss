@@ -1,2 +1,10 @@
 @import '../styles.scss';
 
+app-header{
+    transition: height 4s;
+}
+app-footer{
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
