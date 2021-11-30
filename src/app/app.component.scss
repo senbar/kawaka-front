@@ -1,10 +1,8 @@
 @import '../styles.scss';
 
-app-header{
-    transition: height 4s;
-}
-app-footer{
-    position: absolute;
-    bottom:0;
-    width:100%;
+div{
+    overflow-x: hidden;
+    
+    // height: 100vh;
+    // width: 100%;
 }

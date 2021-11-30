@@ -1,0 +1,45 @@
+@import "../../../styles.scss";
+
+app-kawaka-title {
+    // margin-top: 50%;
+    min-width: 40rem;
+    // width: 90%;
+    height: 90%;
+}
+
+.main {
+    background-image: url("/assets/layered-waves.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    // justify-content: center;
+    flex-flow: column;
+    display: none;
+    .main__title-screen {
+        height: 100vh;
+    }
+    .main__about {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        i {
+            font-style: normal;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    nav {
+        a span.arrow {
+            display: none;
+        }
+        .nav__left,
+        .nav__right {
+            position: static !important;
+        }
+        display: flex !important;
+        flex-flow: column !important;
+        align-items: center;
+        justify-content: center;
+    }
+}

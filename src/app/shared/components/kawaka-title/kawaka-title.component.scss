@@ -1,13 +1,75 @@
-.path{
-    stroke-dasharray: 1000;
-    animation: dash 5s linear forwards;
-}
+@import "../../../../styles.scss";
 
-@keyframes dash{
+div{
+    width: inherit;
+    height: inherit;
+}
+svg {
+    display: block;
+    padding: 4px;
+}
+@keyframes dash {
     from {
-    stroke-dashoffset: 1000;
-  }
-    to{
+        stroke-dashoffset: 1000;
+    }
+    to {
         stroke-dashoffset: 0;
     }
 }
+
+#pot {
+    transform-origin: 160px 120px;
+    animation: rotation 1s ease-out forwards;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+#stream {
+    fill: brown;
+}
+#stream-mask {
+    animation: pour-mask 1s linear forwards;
+}
+@keyframes pour-mask {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#wave1,
+#bump1,
+#bump2 {
+    fill: brown;
+    animation: raise 10s linear forwards;
+}
+@keyframes raise {
+    0% {
+        transform: translateY(8px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+// #wave1, #wave2, #wave3{
+//   animation: filling 5s ease-in-out infinite;
+// }
+// #bump1 #bump2{
+//     animation: filling 1s ease-in-out infinite;
+// }
+
+// @keyframes filling {
+//   50% {transform: translateY(1px)}
+//   100% {transform: translateY(0px)}
+// }

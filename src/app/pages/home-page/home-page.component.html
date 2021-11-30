@@ -1,4 +1,33 @@
+<div class="page">
 
-<app-kawaka-title></app-kawaka-title>
+    <div class="main">
+        <div class="main__title-screen">
+            <!-- <div class="kawaka-title"> -->
+            <app-kawaka-title></app-kawaka-title>
+            <!-- </div> -->
+            <!-- <img src="assets/layered-waves.svg"> -->
+            <div class="main__about" (click)="showAbout= !showAbout">
+                <i>V</i>
+                <span class="">About</span>
+            </div>
+        </div>
+        <app-about [@fadeAboutAnimation]="showAbout"></app-about>
+    </div>
 
+    <nav>
+        <div class="nav__left">
+            <a routerLink="/recipes">
+                <span class="arrow">&#60;</span>
+                <span>recipes</span>
+            </a>
+        </div>
+
+        <div class="nav__right">
+            <a routerLink="/create">
+                <span class="arrow">&#62;</span>
+                <span>create</span>
+            </a>
+        </div>
+    </nav>
+</div>
 <!-- <img width="500px" src="assets/kawaka.svg"/> -->

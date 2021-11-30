@@ -1,5 +1,7 @@
-<div>
-    <app-header></app-header>
-    <router-outlet></router-outlet>
+<!-- <div>
+    <app-header></app-header> -->
+<div [@routeAnimations]="routeAnimationState | async">
+    <router-outlet #outlet="outlet"></router-outlet>
 </div>
-<app-footer></app-footer>
+
+<!-- <app-footer></app-footer>  -->
