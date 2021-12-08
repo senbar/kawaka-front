@@ -2,6 +2,7 @@
 
 $primary-color: #ffe8d6;
 $secondary-color: #b7b7a4;
+$dark-coffee: #1B0000;
 
 $background: #ffffff;
 $error: #b00020;
@@ -44,6 +45,7 @@ body {
     }
 
     nav {
+        z-index:10;
         a {
             span {
                 font-size: 1rem;

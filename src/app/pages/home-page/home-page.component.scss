@@ -8,21 +8,35 @@ app-kawaka-title {
 }
 
 .main {
-    background-image: url("/assets/layered-waves.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    // justify-content: center;
     flex-flow: column;
-    display: none;
+    app-about{
+        height: 100%;
+        margin:0;
+    }
+    .main__waves {
+        position: absolute;
+        z-index: 1;
+        bottom: 0px;
+        background-image: url("/assets/layered-waves.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: red;
+        height: 50rem;
+        width: 100%;
+    }
+    // justify-content: center;
     .main__title-screen {
         height: 100vh;
+        z-index:10;
     }
     .main__about {
         display: flex;
         flex-flow: column;
         align-items: center;
-
+        z-index: 10;
+            color: $primary-color;
         i {
+
             font-style: normal;
         }
     }
