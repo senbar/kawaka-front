@@ -6,13 +6,13 @@
             <app-kawaka-title></app-kawaka-title>
             <!-- </div> -->
             <!-- <img src="assets/layered-waves.svg"> -->
-            <div class="main__about" (click)="showAbout= !showAbout">
+            <div class="main__about" (click)="AboutButtonClick($event)">
                 <i>V</i>
                 <span>About</span>
             </div>
         </div>
         <div class="main__waves">f</div>
-        <app-about [@fadeAboutAnimation]="showAbout"></app-about>
+        <app-about ></app-about>
     </div>
 
     <nav>
