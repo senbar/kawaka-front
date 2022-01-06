@@ -30,13 +30,9 @@ app-kawaka-title {
         z-index:10;
     }
     .main__about {
-        display: flex;
-        flex-flow: column;
-        align-items: center;
         z-index: 10;
-            color: $primary-color;
+        color: $primary-color;
         i {
-
             font-style: normal;
         }
     }

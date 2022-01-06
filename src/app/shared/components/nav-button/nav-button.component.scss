@@ -1,0 +1,11 @@
+@import "../../../../styles.scss";
+button{
+    background-color: red;
+    border:0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+button:hover{
+    background-color: brown;
+}

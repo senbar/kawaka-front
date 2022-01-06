@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { KawakaTitleComponent } from './components/kawaka-title/kawaka-title.component';
+import { NavButtonComponent } from './components/nav-button/nav-button.component';
 
 
 
@@ -10,7 +11,8 @@ import { KawakaTitleComponent } from './components/kawaka-title/kawaka-title.com
   declarations: [
     HeaderComponent,
     FooterComponent,
-    KawakaTitleComponent
+    KawakaTitleComponent,
+    NavButtonComponent
   ],
   imports: [
     CommonModule
@@ -19,7 +21,8 @@ import { KawakaTitleComponent } from './components/kawaka-title/kawaka-title.com
     CommonModule,
     HeaderComponent,
     FooterComponent,
-    KawakaTitleComponent
+    KawakaTitleComponent,
+    NavButtonComponent
   ]
 })
 export class SharedModule { }
