@@ -29,46 +29,11 @@ body {
     }
 }
 
-.page {
-    background-color: $primary-color;
-    width: auto;
-    height: 100%;
-    padding: 0rem 10rem;
+::-webkit-scrollbar {
+   width: 0; /* Remove scrollbar space */
+   background: transparent; /* Optional: just make scrollbar invisible */
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    .main {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    nav {
-        z-index:10;
-        a {
-            span {
-                font-size: 1rem;
-                text-transform: uppercase;
-                padding: 2rem;
-                padding-top: 0.5rem;
-            }
-            display: flex;
-            align-items: center;
-            flex-flow: column;
-        }
-        .nav__left {
-            position: absolute;
-            top: 50vh;
-            left: 1rem;
-        }
-        .nav__right {
-            position: absolute;
-            top: 50vh;
-            right: 1rem;
-        }
-    }
+::-webkit-scrollbar-thumb {
+   background: #FF0000;
 }
