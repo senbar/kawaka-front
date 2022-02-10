@@ -11,7 +11,9 @@ import { RecipesComponent } from "./pages/recipes/recipes.component";
 const routes: Routes=[
     { path: RoutesConfig.routesNames.recipes, component: RecipesComponent, data: { animation: 'RecipesPage' }},
     { path: RoutesConfig.routesNames.create, component: CreateComponent, data: { animation: 'CreatePage' }},
-    { path: RoutesConfig.routesNames.home, component: HomePageComponent, pathMatch: 'full', data: { animation: 'HomePage' }},
+    { path: RoutesConfig.routesNames.home, 
+        children:{import()}
+        , pathMatch: 'full', data: { animation: 'HomePage' }},
     { path: RoutesConfig.routesNames.error404, component: Error404PageComponent },
     { path: "**", redirectTo: RoutesConfig.routes.error404 }
 ];
