@@ -1,20 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RecipesListComponent } from '../core/recipes-list/recipes-list.component';
+import { AboutComponent } from '../core/about/about.component';
+import { HomePageComponent } from './page/home-page.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { CoreModule } from '../core/core.module';
 
 
 
 @NgModule({
   declarations: [
-    RecipesListComponent,
-    AboutComponent
+    HomePageComponent
   ],
   imports: [
-    CommonModule
+    SharedModule,
+    CommonModule,
+    CoreModule
   ],
   exports:[
-    RecipesListComponent,
-    AboutComponent
+    HomePageComponent
   ]
-
 })
-export class CoreModule { }
+export class LandingModule { }
