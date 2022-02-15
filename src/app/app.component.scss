@@ -1,5 +1,9 @@
 @import '../styles.scss';
+.app-container{
+    width: 100vw;
+    height: 100vh;
 
-div{
-    overflow-x: hidden;
+    .app-container-router{
+        // overflow-x: hidden;
+    }
 }

@@ -23,6 +23,10 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(){
-    this.routeAnimationState= this.outlet.activateEvents.pipe(map(x=> this.outlet.activatedRouteData['animation']))
+    this.routeAnimationState= this.outlet.activateEvents.pipe(map(x=>
+      {
+      return this.outlet.activatedRouteData['animation']
+      })
+  )
   }
 }
