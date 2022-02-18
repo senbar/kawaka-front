@@ -1,7 +1,11 @@
 @use "/src/styles" as *;
 .main{
-    height: 100vh;
-    width:  100vw;
-    background-color: $primary-color;
 
+    width: 20rem;
+    height: 20rem;
+
+}
+.recipes-container{
+    border: 2px solid;
+    overflow-y: scroll;
 }

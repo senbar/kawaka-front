@@ -1,6 +1,6 @@
 import { RecipeDTO } from "./recipe.dto";
 
 export function GetRecipesMock():RecipeDTO[]{
-
-    return 
+    let result:RecipeDTO[]=[new RecipeDTO(),new RecipeDTO(), new RecipeDTO()];
+    return result 
 }

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { RecipeDTO } from '../../model/recipe.dto';
+import { RecipesDataService } from '../../service/recipes-data.service';
 
 @Component({
   selector: 'app-recipes-list',
@@ -7,8 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipesListComponent implements OnInit {
 
-  constructor() { }
-  recipes=[1,2,3]
+  constructor(private recipesDataService:RecipesDataService) { 
+    this.recipes$= this.recipesDataService.GetRecipes();
+  }
+
+  recipes$:Observable<RecipeDTO[]>;
 
   ngOnInit(): void {
   }

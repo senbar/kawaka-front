@@ -1,5 +1,13 @@
 <div class="main">
-    <li *ngFor='let recipe of recipes'>
-        <span>test</span>
-    </li>
+    <h1>Lista przepisów</h1>
+    <div class="recipes-container" *ngIf="recipes$ | async as recipes; else loading">
+        <li *ngFor='let recipe of recipes'>
+            <div class="recipe">
+            <span>{{recipe.Author}} </span>
+            <span>{{recipe.Name}}</span>
+            </div>
+        </li>
+    </div>
+
+    <ng-template #loading>Oczekiwanie...</ng-template>
 </div>

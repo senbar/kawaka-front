@@ -1,8 +1,6 @@
 <!-- <div>
     <app-header></app-header> -->
-<div class="app-container">
-    <div class="app-container-router" [@routeAnimations]="routeAnimationState | async">
-        <router-outlet #outlet="outlet"></router-outlet>
-    </div>
+<div class="app-container" [@routeAnimations]="routeAnimationState | async">
+    <router-outlet #outlet="outlet"></router-outlet>
 </div>
 <!-- <app-footer></app-footer>  -->
