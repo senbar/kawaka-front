@@ -6,5 +6,18 @@
     padding: 0.5rem;
     height: 6rem;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+
+    .details{
+        
+    }
+    .name{
+        font-size:1.6rem
+    }
+    .author{
+
+    }
+}
+.main:hover{
+    background-color: $error;
 }

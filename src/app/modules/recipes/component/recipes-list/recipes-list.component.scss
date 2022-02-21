@@ -1,9 +1,9 @@
 @use "/src/styles" as *;
 .main{
-    width: 90%;
+    width: 100%;
 
 }
 .recipes-container{
-    border: 2px solid;
+    // border: 2px solid;
     overflow-y: scroll;
 }
