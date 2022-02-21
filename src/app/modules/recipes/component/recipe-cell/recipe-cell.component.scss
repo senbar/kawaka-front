@@ -1,0 +1,10 @@
+@import "src/styles.scss";
+.main{
+    background-color: $dark-coffee;
+    color: $primary-color;
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 6rem;
+    display: flex;
+    flex-flow: row;
+}

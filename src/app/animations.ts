@@ -10,6 +10,17 @@ export const slideInAnimation =
           top: 0,
           left: 0,
           width: '100%',
+          height: "100vh",
+          "overflow-y": "clip",
+          // "overflow-x": "visible",
+        })
+      ]),
+      query('.waves', [
+        style({
+          position: 'relative',
+          bottom: 0,
+          left: 0,
+          width: '100%',
         })
       ]),
       query(':enter', [
@@ -19,11 +30,15 @@ export const slideInAnimation =
       query(':leave', animateChild()),
       group([
         query(':leave', [
-          animate('300ms ease-out', style({ left: '100%' }))
+          animate('400ms ease-out', style({ left: '100%' }))
         ]),
         query(':enter', [
-          animate('300ms ease-out', style({ left: '0%' }))
-        ])
+          animate('400ms ease-out', style({ left: '0%' }))
+        ]),
+        query('.waves',[
+          animate('400ms ease-out', style({ left:'-100%', bottom:"-200%"}))
+        ]),
+        
       ]),
       query(':enter', animateChild()),
     ]),
