@@ -4,6 +4,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { KawakaTitleComponent } from './components/kawaka-title/kawaka-title.component';
 import { NavButtonComponent } from './components/nav-button/nav-button.component';
+import { NavButtonShieldComponent } from './components/nav-button-shield/nav-button-shield.component';
 
 
 
@@ -12,7 +13,8 @@ import { NavButtonComponent } from './components/nav-button/nav-button.component
     HeaderComponent,
     FooterComponent,
     KawakaTitleComponent,
-    NavButtonComponent
+    NavButtonComponent,
+    NavButtonShieldComponent
   ],
   imports: [
     CommonModule
@@ -22,7 +24,8 @@ import { NavButtonComponent } from './components/nav-button/nav-button.component
     HeaderComponent,
     FooterComponent,
     KawakaTitleComponent,
-    NavButtonComponent
+    NavButtonComponent,
+    NavButtonShieldComponent
   ]
 })
 export class SharedModule { }

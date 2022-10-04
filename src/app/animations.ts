@@ -24,8 +24,9 @@ export const slideInAnimation =
         })
       ]),
       query(':enter', [
-        style({ left: '-100%'
-       })
+        style({
+          left: '-100%'
+        })
       ]),
       query(':leave', animateChild()),
       group([
@@ -35,10 +36,10 @@ export const slideInAnimation =
         query(':enter', [
           animate('400ms ease-out', style({ left: '0%' }))
         ]),
-        query('.waves',[
-          animate('400ms ease-out', style({ left:'-100%', bottom:"-200%"}))
+        query('.waves', [
+          animate('400ms ease-out', style({ left: '-100%', bottom: "-200%" }))
         ]),
-        
+
       ]),
       query(':enter', animateChild()),
     ]),
@@ -48,7 +49,7 @@ export const slideInAnimation =
         style({
           position: 'absolute',
           top: 0,
-          left:0,
+          left: 0,
           width: '100%'
         })
       ]),
@@ -66,5 +67,5 @@ export const slideInAnimation =
       ]),
       query(':enter', animateChild()),
     ])]
-  
+
   );

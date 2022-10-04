@@ -7,7 +7,7 @@ import { slideInAnimation } from './animations';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations:[
+  animations: [
     slideInAnimation
   ]
 })
@@ -22,11 +22,10 @@ export class AppComponent implements OnInit {
   constructor() {
   }
 
-  ngOnInit(){
-    this.routeAnimationState= this.outlet.activateEvents.pipe(map(x=>
-      {
+  ngOnInit() {
+    this.routeAnimationState = this.outlet.activateEvents.pipe(map(x => {
       return this.outlet.activatedRouteData['animation']
-      })
-  )
+    })
+    )
   }
 }

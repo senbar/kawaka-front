@@ -1,81 +1,75 @@
 @import "../../../../styles.scss";
 
-app-kawaka-title {
-    // margin-top: 50%;
-    min-width: 40rem;
-    // width: 90%;
-    height: 90%;
-}
-
 .page {
-    display: grid;
-    grid-template-areas:
-        "nav-left main nav-right"
-        "waves waves waves"
-        "about about about";
-    grid-template-columns: 15% auto 15%;
-    grid-template-rows: 80vh 20vh auto;
-    // background-color: $primary-color;
-    flex: 1;
-    padding: 0rem;
+  display: grid;
+  grid-template-areas:
+    "nav-left main nav-right"
+    "waves waves waves"
+    "about about about";
+  grid-template-columns: 15% auto 15%;
+  grid-template-rows: 80vh 20vh auto;
+  flex: 1;
+  padding: 0rem;
 }
 
-.main {
-    grid-area: main;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .main__title-screen {
-        width: 100%;
-    }
-}
-.waves {
-    //hack to accomodate background
-    height: 120vh;
-    margin: -100vh 0;
+.title {
+  grid-area: main;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  app-kawaka-title {
+    min-width: 40rem;
     width: 100%;
-    background-image: url("/assets/layered-waves.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    grid-area: waves;
+  }
+}
 
-    display: flex;
+.waves {
+  //hack to accomodate background
+  height: 120vh;
+  margin: -100vh 0;
+  width: 100%;
+  background-image: url("/assets/layered-waves.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  grid-area: waves;
 
-    justify-content: center;
-    align-items: flex-end;
-    .nav__bottom {
-        span {
-            color: $primary-color;
-            font-size: 2rem;
-        }
-        font-size: 2rem;
-        margin: 5rem;
+  display: flex;
+
+  justify-content: center;
+  align-items: flex-end;
+  .nav__bottom {
+    span {
+      color: $primary-color;
+      font-size: 2rem;
     }
+    font-size: 2rem;
+    margin: 5rem;
+  }
 }
 
 .nav__side {
-    justify-self: center;
-    align-self: center;
-a{
+  justify-self: center;
+  align-self: center;
+  a {
     display: flex;
     flex-flow: column;
-    span{
-        color: $dark-coffee;
-        font-size: 2rem;
+    span {
+      color: $dark-coffee;
+      font-size: 2rem;
     }
-}
-    .nav__left {
-        grid-area: nav-left;
-    }
-    .nav__right {
-        grid-area: nav-right;
-    }
+  }
+  .nav__left {
+    grid-area: nav-left;
+  }
+  .nav__right {
+    grid-area: nav-right;
+  }
 }
 
 .about {
-    grid-area: about;
+  grid-area: about;
 }
 
 // @media (max-width: 850px) {
