@@ -5,8 +5,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { CoreModule } from '../core/core.module';
 import { RouterModule } from '@angular/router';
 
-
-
 @NgModule({
   declarations: [
     HomePageComponent
@@ -17,7 +15,7 @@ import { RouterModule } from '@angular/router';
     CoreModule,
     RouterModule
   ],
-  exports:[
+  exports: [
     HomePageComponent
   ]
 })

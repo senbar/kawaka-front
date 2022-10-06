@@ -1,4 +1,11 @@
-@import '../styles.scss';
-.app-container{
-    background-color: $primary-color;
+@import "../styles.scss";
+.app-container {
+  display: block;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }

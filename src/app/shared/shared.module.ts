@@ -6,8 +6,6 @@ import { KawakaTitleComponent } from './components/kawaka-title/kawaka-title.com
 import { NavButtonComponent } from './components/nav-button/nav-button.component';
 import { NavButtonShieldComponent } from './components/nav-button-shield/nav-button-shield.component';
 
-
-
 @NgModule({
   declarations: [
     HeaderComponent,

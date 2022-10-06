@@ -12,7 +12,6 @@ export const slideInAnimation =
           width: '100%',
           height: "100vh",
           "overflow-y": "clip",
-          // "overflow-x": "visible",
         })
       ]),
       query('.waves', [
@@ -67,5 +66,4 @@ export const slideInAnimation =
       ]),
       query(':enter', animateChild()),
     ])]
-
   );

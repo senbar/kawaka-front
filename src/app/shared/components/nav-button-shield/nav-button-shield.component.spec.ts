@@ -8,9 +8,9 @@ describe('NavButtonShieldComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NavButtonShieldComponent ]
+      declarations: [NavButtonShieldComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

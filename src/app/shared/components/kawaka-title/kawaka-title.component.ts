@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./kawaka-title.component.scss']
 })
 export class KawakaTitleComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

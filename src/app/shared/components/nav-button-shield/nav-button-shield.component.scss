@@ -1,15 +1,15 @@
 @import "/src/styles.scss";
-button{
-    background-color: $dark-coffee;
-    border-width: 0;
-    margin: 1rem;
-    border-radius: 4px;
-    color: white;
-    width: 5rem;
-    height: 3rem;
-    text-transform: uppercase;
+button {
+  background-color: $dark-coffee;
+  border-width: 0;
+  margin: 1rem;
+  border-radius: 4px;
+  color: white;
+  width: 5rem;
+  height: 3rem;
+  text-transform: uppercase;
 }
-button:hover{
-    background-color: $primary-color;
-    color: $dark-coffee;
+button:hover {
+  background-color: $primary-color;
+  color: $dark-coffee;
 }

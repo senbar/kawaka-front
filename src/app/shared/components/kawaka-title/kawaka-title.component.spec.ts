@@ -8,9 +8,9 @@ describe('KawakaTitleComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ KawakaTitleComponent ]
+      declarations: [KawakaTitleComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {

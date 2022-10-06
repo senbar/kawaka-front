@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router, RouterEvent, RouterOutlet } from '@angular/router';
-import { map, Observable, Subject, tap } from 'rxjs';
+import { map, observable, Observable, Subject, tap } from 'rxjs';
 import { slideInAnimation } from './animations';
 
 @Component({
@@ -17,15 +17,14 @@ export class AppComponent implements OnInit {
   @ViewChild("outlet", { static: true })
   outlet!: RouterOutlet;
 
-  routeAnimationState!: Observable<string>;
+  routeAnimationState = new Subject<string>();
 
   constructor() {
   }
 
   ngOnInit() {
-    this.routeAnimationState = this.outlet.activateEvents.pipe(map(x => {
+    this.outlet.activateEvents.pipe(map(x => {
       return this.outlet.activatedRouteData['animation']
-    })
-    )
+    })).subscribe(this.routeAnimationState);
   }
 }

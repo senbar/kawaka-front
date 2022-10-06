@@ -1,6 +1,6 @@
 @import "../../../../styles.scss";
 
-.page {
+.main {
   display: grid;
   grid-template-areas:
     "nav-left main nav-right"
@@ -8,7 +8,7 @@
     "about about about";
   grid-template-columns: 15% auto 15%;
   grid-template-rows: 80vh 20vh auto;
-  flex: 1;
+  flex-grow: 1;
   padding: 0rem;
 }
 
@@ -27,8 +27,8 @@
 .waves {
   //hack to accomodate background
   height: 120vh;
-  margin: -100vh 0;
   width: 100%;
+  margin: -100vh 0;
   background-image: url("/assets/layered-waves.svg");
   background-repeat: no-repeat;
   background-size: cover;
