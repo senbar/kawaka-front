@@ -10,16 +10,14 @@
     </app-nav-button>
   </div>
 
-  <app-nav-button class="nav__side nav__left">
-    <a routerLink="/recipes">
-      <span class="arrow">&#60;</span>
+  <a routerLink="/recipes" class="nav__side nav__left">
+    <app-nav-button type="left">
       <span>recipes</span>
-    </a>
-  </app-nav-button>
+    </app-nav-button>
+  </a>
 
-  <app-nav-button class="nav__side nav__right">
+  <app-nav-button type="right" class="nav__side nav__right">
     <a routerLink="/create">
-      <span class="arrow">&#62;</span>
       <span>create</span>
     </a>
   </app-nav-button>

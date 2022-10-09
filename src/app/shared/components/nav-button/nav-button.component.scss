@@ -1,11 +1,61 @@
 @import "../../../../styles.scss";
-button{
-    background-color: transparent;
-    border:0;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+button {
+  background-color: transparent;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  text-transform: uppercase;
+  color: $espresso;
+
+  border: 0;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &.big {
+    width: 120px;
+    height: 120px;
+  }
+
+  &.small {
+    width: 60px;
+    height: 60px;
+  }
 }
-button:hover{
-    background-color: brown;
+
+button.big > .content {
+  font-size: 1.5rem;
+}
+
+button.small > .content {
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: $flat-white;
+  transition: background-color 0.5s;
+
+  .arrow {
+    display: inline-block;
+  }
+
+  .content {
+    display: none;
+  }
+}
+
+.arrow {
+  color: $primary-color;
+  font-weight: bold;
+  display: none;
+}
+
+.arrow.small {
+  font-size: 1rem;
+}
+
+.arrow.big {
+  font-size: 4rem;
 }

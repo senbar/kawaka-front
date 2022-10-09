@@ -1,18 +1,18 @@
-<div classs="page">
-        <div class="header">
-                <app-nav-button-shield>
-                                <a routerLink="/">
-                                        <span>home</span>
-                                </a>
-                </app-nav-button-shield>
+<div class="header">
+  <a routerLink="/create" class="nav__side nav__left">
+    <app-nav-button type="left" size="small">
+      <span>create</span>
+    </app-nav-button>
+  </a>
 
-                <app-nav-button-shield>
-                                <a routerLink="/">
-                                        <span>create</span>
-                                </a>
-                        </app-nav-button-shield>
-        </div>
-        <div class="main">
-                <app-recipes-list></app-recipes-list>
-        </div>
+  <a routerLink="/" class="nav__side nav__right">
+    <app-nav-button type="right" size="small">
+      <span>home</span>
+    </app-nav-button>
+  </a>
+
+</div>
+
+<div class="main">
+  <app-recipes-list></app-recipes-list>
 </div>

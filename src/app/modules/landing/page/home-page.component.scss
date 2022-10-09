@@ -52,14 +52,12 @@
 .nav__side {
   justify-self: center;
   align-self: center;
+
   a {
     display: flex;
     flex-flow: column;
-    span {
-      color: $dark-coffee;
-      font-size: 2rem;
-    }
   }
+
   .nav__left {
     grid-area: nav-left;
   }
@@ -70,6 +68,11 @@
 
 .about {
   grid-area: about;
+}
+
+.arrow {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 // @media (max-width: 850px) {

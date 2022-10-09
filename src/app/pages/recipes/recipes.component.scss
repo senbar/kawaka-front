@@ -1,24 +1,35 @@
 @import "../../../styles.scss";
 
-.page{
+.header {
+  display: flex;
+  padding: 1rem;
 
-
+  justify-content: space-between;
 }
 
-.header{
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  app-recipes-list {
+    width: 90%;
+  }
+}
+
+.nav__side {
+  justify-self: center;
+  align-self: center;
+
+  a {
     display: flex;
-    padding: 2rem;
+    flex-flow: column;
+  }
+
+  .nav__left {
+    grid-area: nav-left;
+  }
+  .nav__right {
+    grid-area: nav-right;
+  }
 }
-
-.main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    app-recipes-list{
-        width: 80%;
-    }
-
-}
-

@@ -1,5 +1,5 @@
 <div class="main">
-    <h1>Lista przepisów</h1>
+    <h1>Ostatnie przepisy</h1>
     <div class="recipes-container" *ngIf="recipes$ | async as recipes; else loading">
         <li *ngFor='let recipe of recipes'>
             <recipes-recipe-cell [model]="recipe"></recipes-recipe-cell>

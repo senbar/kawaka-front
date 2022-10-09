@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 $primary-color: #ffe8d6;
-$secondary-color: #b7b7a4;
+$secondary-color: #eed3c0;
+$flat-white: #783b36;
+$espresso: #562827;
 $dark-coffee: #1b0000;
 
 $background: #ffffff;
@@ -27,6 +29,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
+  height: 0;
   // background: transparent; /* Optional: just make scrollbar invisible */
 }
 

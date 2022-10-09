@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav-button',
@@ -6,6 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-button.component.scss']
 })
 export class NavButtonComponent implements OnInit {
+
+  @Input()
+  type: "left" | "right" | "down" | "" = "";
+
+  @Input()
+  size: "small" | "big" = "big";
+
+  arrowString = {
+    "left": '&#60;',
+    "right": "&#62;",
+    "down": "",
+    "": "err"
+  };
 
   constructor() { }
 

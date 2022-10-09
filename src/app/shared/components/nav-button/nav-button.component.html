@@ -1,4 +1,6 @@
-
-<button>
+<button [ngClass]="size">
+  <span class="arrow" [ngClass]="size" [innerHTML]="arrowString[type]"></span>
+  <div class="content">
     <ng-content></ng-content>
+  </div>
 </button>
