@@ -1,9 +1,17 @@
 <div class="main">
-    <span class="name">{{model?.Name}}</span>
-    <div class="details">
-        Coffee: {{model?.Coffee}}
-        Temperature: {{model?.Temperature}}
+  <div class="top-row">
+    <img src="assets/coffee-pot.svg" />
+
+    <div class="basic-info">
+      <span class="name">{{model?.Name}}</span>
+      <span class="type">Type: aeropress</span>
     </div>
-    <span class="author">by {{model?.Author}}</span>
+  </div>
+  <ul class="details">
+    <li>Coffee: {{model?.Coffee}}</li>
+    <li>Temperature: {{model?.Temperature}}</li>
+    <li>Duration: {{model?.Duration}}</li>
+  </ul>
+  <span class="author">by {{model?.Author}}</span>
 
 </div>

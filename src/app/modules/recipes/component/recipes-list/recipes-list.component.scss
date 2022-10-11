@@ -1,9 +1,15 @@
 @use "/src/styles" as *;
-.main{
-    width: 100%;
-
+.main {
+  width: 100%;
 }
-.recipes-container{
-    // border: 2px solid;
-    overflow-y: scroll;
+.recipes-container {
+  width: 100%;
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+  // border: 2px solid;
+  // overflow-y: scroll;
+  li {
+  }
 }

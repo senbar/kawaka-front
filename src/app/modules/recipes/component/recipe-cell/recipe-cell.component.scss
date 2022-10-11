@@ -1,23 +1,48 @@
 @import "src/styles.scss";
-.main{
-    background-color: $dark-coffee;
-    color: $primary-color;
-    margin: 1rem;
-    padding: 0.5rem;
-    height: 6rem;
-    display: flex;
-    flex-flow: column;
 
-    .details{
-        
-    }
-    .name{
-        font-size:1.6rem
-    }
-    .author{
-
-    }
+:host {
+  display: inline-block;
 }
-.main:hover{
-    background-color: $error;
+
+.main {
+  background-color: $flat-white;
+  color: $primary-color;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: column;
+
+  .top-row {
+    display: flex;
+    flex-flow: row;
+
+    gap: 10px;
+
+    .basic-info {
+      display: flex;
+      flex-direction: column;
+
+      .name {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:hover {
+    background-color: $espresso;
+  }
+}
+
+img {
+  width: 64px;
+  height: 64px;
+
+  background-color: $primary-color;
+  border-radius: 5px;
+  padding: 3px;
 }
