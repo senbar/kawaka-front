@@ -1,8 +1,16 @@
 <header>
+  <a routerLink="/create" class="nav__side nav__left">
+    <app-nav-button type="left" size="small">
+      <span>create</span>
+    </app-nav-button>
+  </a>
 
-    <nav>
-        <a href="recipes">view</a>
-        <a href="create">create</a>
-    </nav>
+  <div class="divider"></div>
+
+  <a routerLink="/" class="nav__side nav__right">
+    <app-nav-button type="right" size="small">
+      <span>home</span>
+    </app-nav-button>
+  </a>
 
 </header>

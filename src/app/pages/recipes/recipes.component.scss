@@ -1,10 +1,21 @@
 @import "../../../styles.scss";
 
-.header {
-  display: flex;
-  padding: 1rem;
+app-header {
+  background-color: $primary-color;
+  height: 4rem;
 
-  justify-content: space-between;
+  @media #{$phone} {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 3rem;
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
@@ -13,23 +24,6 @@
   justify-content: center;
 
   app-recipes-list {
-    width: 90%;
-  }
-}
-
-.nav__side {
-  justify-self: center;
-  align-self: center;
-
-  a {
-    display: flex;
-    flex-flow: column;
-  }
-
-  .nav__left {
-    grid-area: nav-left;
-  }
-  .nav__right {
-    grid-area: nav-right;
+    width: 100%;
   }
 }

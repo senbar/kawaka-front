@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { RecipeDTO } from '../../model/recipe.dto';
+import { RecipeDTO } from '../../../core/model/recipe.dto';
 
 @Component({
   selector: 'recipes-recipe-cell',

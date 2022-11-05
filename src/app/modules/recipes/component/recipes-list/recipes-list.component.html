@@ -1,9 +1,11 @@
 <div class="main">
-  <h1>Ostatnie przepisy</h1>
-  <div class="recipes-container" *ngIf="recipes$ | async as recipes; else loading">
-    <li *ngFor='let recipe of recipes'>
-      <recipes-recipe-cell [model]="recipe"></recipes-recipe-cell>
-    </li>
+  <h1 class="title">Ostatnie przepisy</h1>
+  <div class="wrapper">
+    <div class="recipes-container" *ngIf="recipes$ | async as recipes; else loading">
+      <li *ngFor='let recipe of recipes'>
+        <recipes-recipe-cell [model]="recipe"></recipes-recipe-cell>
+      </li>
+    </div>
   </div>
 
   <ng-template #loading>Oczekiwanie...</ng-template>

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { RecipeDTO } from '../../model/recipe.dto';
+import { RecipeDTO } from '../../../core/model/recipe.dto';
 import { RecipesDataService } from '../../service/recipes-data.service';
 
 @Component({
@@ -10,7 +10,7 @@ import { RecipesDataService } from '../../service/recipes-data.service';
 })
 export class RecipesListComponent implements OnInit {
 
-  constructor(private recipesDataService:RecipesDataService) { 
+  constructor(private recipesDataService:RecipesDataService) {
     this.recipes$= this.recipesDataService.GetRecipes();
   }
 

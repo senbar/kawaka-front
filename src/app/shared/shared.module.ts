@@ -5,6 +5,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { KawakaTitleComponent } from './components/kawaka-title/kawaka-title.component';
 import { NavButtonComponent } from './components/nav-button/nav-button.component';
 import { NavButtonShieldComponent } from './components/nav-button-shield/nav-button-shield.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,9 +16,11 @@ import { NavButtonShieldComponent } from './components/nav-button-shield/nav-but
     NavButtonShieldComponent
   ],
   imports: [
+    RouterModule,
     CommonModule
   ],
   exports: [
+    RouterModule,
     CommonModule,
     HeaderComponent,
     FooterComponent,

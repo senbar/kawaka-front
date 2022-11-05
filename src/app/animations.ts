@@ -37,8 +37,7 @@ export const slideInAnimation =
         ]),
         query('.waves', [
           animate('400ms ease-out', style({ left: '-100%', bottom: "-200%" }))
-        ]),
-
+        ])
       ]),
       query(':enter', animateChild()),
     ]),
@@ -48,40 +47,45 @@ export const slideInAnimation =
         style({
           position: 'absolute',
           top: 0,
-          left: 0,
+          right: 0,
           width: '100%',
           height: "100vh",
           "overflow-y": "clip",
         })
       ]),
-      query('.waves', [
+      query(':leave', [
         style({
-          position: 'relative',
-          bottom: 0,
-          left: 0,
-          width: '100%',
+          "z-index": 2,
         })
       ]),
       query(':enter', [
         style({
-          left: '-100%'
+          right: '-100%',
+        })
+      ]),
+      query('.waves', [
+        style({
+          position: 'relative',
+          bottom: "-200%",
+          left: "-100%",
+          width: '100%',
         })
       ]),
       query(':leave', animateChild()),
       group([
         query(':leave', [
-          animate('400ms ease-out', style({ left: '100%' }))
+          animate('400ms ease-out', style({ right: '100%', top:0 }))
         ]),
         query(':enter', [
-          animate('400ms ease-out', style({ left: '0%' }))
+          animate('400ms ease-out', style({ right: '0%' }))
         ]),
         query('.waves', [
-          animate('400ms ease-out', style({ left: '-100%', bottom: "-200%" }))
-        ]),
-
+          animate('400ms ease-out', style({ left: 0, bottom: 0 }))
+        ])
       ]),
       query(':enter', animateChild()),
     ]),
+
     // transition('RecipesPage => HomePage', [
     //   style({ position: 'relative' }),
     //   query(':enter, :leave', [

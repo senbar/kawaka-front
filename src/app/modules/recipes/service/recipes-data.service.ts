@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { delay, Observable, of } from 'rxjs';
-import { RecipeDTO } from '../model/recipe.dto';
-import { GetRecipesMock } from '../model/recipes.mock';
+import { RecipeDTO } from '../../core/model/recipe.dto';
+import { GetRecipesMock } from '../../core/model/recipes.mock';
 
 @Injectable({
   providedIn: 'root'
