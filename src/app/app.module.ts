@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LandingModule } from './modules/landing/landing.module';
 import { CoreModule } from './modules/core/core.module';
 import { RecipesModule } from './modules/recipes/recipes.module';
+import { CreateComponent } from './pages/create/create.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { RecipesModule } from './modules/recipes/recipes.module';
   declarations: [
     AppComponent,
     RecipesComponent,
+    CreateComponent,
     Error404PageComponent],
   providers: [],
   bootstrap: [AppComponent]

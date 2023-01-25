@@ -10,11 +10,11 @@ import { RecipesDataService } from '../../service/recipes-data.service';
 })
 export class RecipesListComponent implements OnInit {
 
-  constructor(private recipesDataService:RecipesDataService) {
-    this.recipes$= this.recipesDataService.GetRecipes();
+  constructor(private recipesDataService: RecipesDataService) {
+    this.recipes$ = this.recipesDataService.GetRecipes();
   }
 
-  recipes$:Observable<RecipeDTO[]>;
+  recipes$: Observable<RecipeDTO[]>;
 
   ngOnInit(): void {
   }

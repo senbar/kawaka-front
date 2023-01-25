@@ -10,7 +10,7 @@ export class RecipesDataService {
 
   constructor() { }
 
-  GetRecipes():Observable<RecipeDTO[]>{
+  GetRecipes(): Observable<RecipeDTO[]> {
     return of(GetRecipesMock()).pipe(delay(200));
   }
 }

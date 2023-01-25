@@ -2,14 +2,15 @@ import { InjectionToken } from '@angular/core';
 
 export let ROUTES_CONFIG = new InjectionToken('routes.config');
 
-const basePaths={
+const basePaths = {
 };
 
-const routesNames={
-    home: '',
-    error404: '404',
-    recipes: 'recipes',
-    create: 'create'
+//todo fix this into typescript system
+const routesNames = {
+  home: '',
+  error404: '404',
+  recipes: 'recipes',
+  create: 'create'
 }
 
 

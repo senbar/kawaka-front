@@ -1,0 +1,38 @@
+@import "../../../../styles.scss";
+
+.loader {
+  width: 50vmin;
+  height: 50vmin;
+  background-color: $espresso;
+  border-radius: 50%;
+  position: relative;
+
+  animation: rotate 400ms infinite;
+
+  .bar {
+    position: absolute;
+    //todo centre without absolute
+    top: 50%;
+    bottom: 50%;
+    width: 50vmin;
+    height: 50px;
+    background-color: $primary-color;
+  }
+
+  .inner-circle {
+    background-color: $primary-color;
+    position: absolute;
+    height: 40vmin;
+    width: 40vmin;
+    border-radius: 50%;
+    //todo centre circle
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

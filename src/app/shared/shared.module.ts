@@ -6,6 +6,8 @@ import { KawakaTitleComponent } from './components/kawaka-title/kawaka-title.com
 import { NavButtonComponent } from './components/nav-button/nav-button.component';
 import { NavButtonShieldComponent } from './components/nav-button-shield/nav-button-shield.component';
 import { RouterModule } from '@angular/router';
+import { LoaderComponent } from './components/loader/loader.component';
+import { TextFieldComponent } from './components/text-field/text-field.component';
 
 @NgModule({
   declarations: [
@@ -13,20 +15,24 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     KawakaTitleComponent,
     NavButtonComponent,
-    NavButtonShieldComponent
+    NavButtonShieldComponent,
+    LoaderComponent,
+    TextFieldComponent
   ],
   imports: [
     RouterModule,
     CommonModule
   ],
   exports: [
+    LoaderComponent,
     RouterModule,
     CommonModule,
     HeaderComponent,
     FooterComponent,
     KawakaTitleComponent,
     NavButtonComponent,
-    NavButtonShieldComponent
+    NavButtonShieldComponent,
+    TextFieldComponent
   ]
 })
 export class SharedModule { }

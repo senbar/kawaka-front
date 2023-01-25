@@ -1,5 +1,5 @@
 <div class="main">
-  <h1 class="title">Ostatnie przepisy</h1>
+  <!-- <h1 class="title">Ostatnie przepisy</h1> -->
   <div class="wrapper">
     <div class="recipes-container" *ngIf="recipes$ | async as recipes; else loading">
       <li *ngFor='let recipe of recipes'>
@@ -8,5 +8,9 @@
     </div>
   </div>
 
-  <ng-template #loading>Oczekiwanie...</ng-template>
+  <ng-template #loading>
+    <div class="loader-wrapper">
+      <app-loader></app-loader>
+    </div>
+  </ng-template>
 </div>

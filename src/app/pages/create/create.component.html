@@ -1,13 +1,6 @@
 <div class="page">
-  <nav>
-    <div class="nav__left">
-      <a routerLink="/recipes">
-        &#60;
-        <span>recipes</span>
-      </a>
-    </div>
-  </nav>
+  <app-header [Left]="{name: 'About', route: '/'}" [Right]="{name:'Recipes', route:'/recipes'}"></app-header>
   <div class="main">
-    here goes creating recipe
+    <app-recipe-editor></app-recipe-editor>
   </div>
 </div>

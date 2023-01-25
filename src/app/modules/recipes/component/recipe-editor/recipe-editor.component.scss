@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  height: 500px;
+
+  width: 80%;
+  margin: 2rem;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.field {
+  // height: 1rem;
+  display: flex;
+  flex-flow: column;
+}

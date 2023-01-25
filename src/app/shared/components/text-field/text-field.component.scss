@@ -1,0 +1,18 @@
+@import "src/styles.scss";
+
+input {
+  padding: 1rem;
+
+  font-size: inherit;
+  // font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  border: 1px solid rgba($color: #000000, $alpha: 0.1);
+  border-radius: 4px;
+
+  &:focus-visible {
+    border-color: rgba($color: #000000, $alpha: 0.3);
+    outline: none !important;
+
+    box-shadow: 1px 1px 1px rgba($espresso, 0.1), inset 1px 1px 5px rgba($espresso, 0.1);
+  }
+}

@@ -1,15 +1,15 @@
 <header>
-  <a routerLink="/create" class="nav__side nav__left">
+  <a [routerLink]="Left?.route" class="nav__side nav__left">
     <app-nav-button type="left" size="small">
-      <span>create</span>
+      <span>{{Left?.name}}</span>
     </app-nav-button>
   </a>
 
   <div class="divider"></div>
 
-  <a routerLink="/" class="nav__side nav__right">
+  <a [routerLink]="Right?.route" class="nav__side nav__right">
     <app-nav-button type="right" size="small">
-      <span>home</span>
+      <span>{{Right?.name}}</span>
     </app-nav-button>
   </a>
 
